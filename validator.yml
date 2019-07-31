@@ -1,0 +1,19 @@
+version: '3'
+services:
+  validator:
+    build:
+      context: ./src
+      dockerfile: Dockerfile
+    container_name: validator
+    volumes:
+      - ./validator:/home/parity/.local/share/io.parity.ethereum
+    entrypoint: /start.sh
+    environment:
+      NAT_IP: 130.183.206.234
+      #If you have multiple addresses, you can specify one address for the authority node.
+      #AUTH_ADDRESS: whatever
+    user: "0:0"
+    ports:
+      - 8545:8545
+      - 8546:8546
+      - 30303:30303
