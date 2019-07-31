@@ -17,10 +17,9 @@ check_packages() {
 
 	#Chrony configuration
 	sudo apt install chrony
-	cat /src/chronyConfig.tpl > /etc/chrony/chrony.conf
+	cat src/chronyConfig.tpl > /etc/chrony/chrony.conf
+	sudo service chrony restart
 	sudo systemctl enable chrony
-	sudo systemctl restart chrony
-	sudo systemctl start chronyd
 	sudo chown -R 1000:1000 ./validator
 }
 
