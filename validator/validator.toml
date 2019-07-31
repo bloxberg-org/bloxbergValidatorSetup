@@ -25,7 +25,7 @@ password = ["/home/parity/.local/share/io.parity.ethereum/validator.pwd"]
 
 [mining]
 #CHANGE ENGINE SIGNER TO VALIDATOR ADDRESS
-engine_signer = "0x6464b1a07129b8436f2fa66ac6139eb9ffa73fa0"
+engine_signer = "0x0f0530ab2338e20678296f185e99a11cc0b965b5"
 reseal_on_txs = "none"
 force_sealing = true
 
