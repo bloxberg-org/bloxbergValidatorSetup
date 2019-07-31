@@ -3,11 +3,13 @@ This is a Docker image for running a validator node on the bloxberg blockchain.
 
 Remote Machine Minimum System Requirements:
 * Ubuntu 16.04 or 18.04 Image (Other Operating Systems can work, but commands may have to be altered)
-* Minimum 1 CPU
-* Minimum 1GB Memory
-* Anything > 4GB will be good, but may need to be upgraded in the future
+* Minimum 2 CPU
+* Minimum 2GB Memory
+* Anything > 8GB will be good, but may need to be upgraded in the future
 
-You must also have docker installed on your remote machine. Additionally, the blockchain connects to other nodes via port 30303, so it is important this port is open beforehand.
+These are simply the minimum requirements and we do recommend to allocate more resources to ensure stability.
+
+Additionally, the blockchain connects to other nodes via port 30303, so it is important this port is open via your firewall beforehand.
 
 ## Setup Process
 
