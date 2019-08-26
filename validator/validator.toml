@@ -3,6 +3,7 @@
 [parity]
 chain = "/home/parity/.local/share/io.parity.ethereum/bloxberg.json"
 base_path = "/home/parity/.local/share/io.parity.ethereum/bloxbergData"
+auto_update = "all"
 
 [network]
 port = 30303
