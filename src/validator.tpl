@@ -2,7 +2,7 @@
 
 [parity]
 chain = "/home/parity/.local/share/io.parity.ethereum/bloxberg.json"
-base_path = "/home/parity/.local/share/io.parity.ethereum/validator"
+base_path = "/home/parity/.local/share/io.parity.ethereum/bloxbergData"
 
 [network]
 port = 30303
