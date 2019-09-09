@@ -14,6 +14,4 @@ services:
       #AUTH_ADDRESS: 0xab59a1ea1ac9af9f77518b9b4ad80942ade35088
     user: "0:0"
     ports:
-      - 8545:8545
-      - 8546:8546
       - 30303:30303
