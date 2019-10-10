@@ -1,4 +1,4 @@
-FROM parity/parity:latest
+FROM parity/parity:v2.6.2-beta
 USER root
 
 ADD start.sh validator.tpl /
