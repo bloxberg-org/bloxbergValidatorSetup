@@ -9,7 +9,7 @@ auto_update = "all"
 port = 30303
 reserved_peers = "/home/parity/.local/share/io.parity.ethereum/bootnodes.txt"
 nat = "extip:130.183.206.234"
-reserved_only = true
+discovery = false
 
 [rpc]
 port = 8545
@@ -27,10 +27,12 @@ password = ["/home/parity/.local/share/io.parity.ethereum/validator.pwd"]
 
 [mining]
 #CHANGE ENGINE SIGNER TO VALIDATOR ADDRESS
-engine_signer = "0x0f0530ab2338e20678296f185e99a11cc0b965b5"
+engine_signer = "0x1788093e98242e0536f92d190b19bae096f1394c"
 reseal_on_txs = "none"
 force_sealing = true
 
 [footprint]
 tracing = "off"
 
+[misc]
+log_file = "/home/parity/.local/share/io.parity.ethereum/bloxberg.log"

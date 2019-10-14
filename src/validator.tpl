@@ -9,7 +9,7 @@ auto_update = "all"
 port = 30303
 reserved_peers = "/home/parity/.local/share/io.parity.ethereum/bootnodes.txt"
 nat = "__NAT_IP__"
-reserved_only = true
+discovery = false
 
 [rpc]
 port = 8545
@@ -34,3 +34,5 @@ force_sealing = true
 [footprint]
 tracing = "off"
 
+[misc]
+log_file = "/home/parity/.local/share/io.parity.ethereum/bloxberg.log"
