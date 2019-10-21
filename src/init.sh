@@ -47,6 +47,7 @@ start () {
 resync () {
 	rm -rf /home/parity/.local/share/io.parity.ethereum/bloxbergData/chains
 	rm -rf /home/parity/.local/share/io.parity.ethereum/bloxbergData/cache
+	wget https://raw.githubusercontent.com/bloxberg-org/bloxbergValidatorSetup/master/validator/bootnodes.txt -O /home/parity/.local/share/io.parity.ethereum/bootnodes.txt 
 }
 
 debug () {

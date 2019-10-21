@@ -3,4 +3,4 @@ USER root
 
 ADD init.sh validator.tpl /
 RUN apt-get update
-RUN apt-get -y install sed
+RUN apt-get -y install sed wget
