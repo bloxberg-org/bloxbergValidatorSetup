@@ -16,7 +16,7 @@ check_packages() {
 	
 
 	#Chrony configuration
-	sudo apt install chrony
+	sudo apt install chrony wget
 	cat src/chronyConfig.tpl > /etc/chrony/chrony.conf
 	sudo service chrony restart
 	sudo systemctl enable chrony
