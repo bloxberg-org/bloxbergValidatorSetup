@@ -31,7 +31,7 @@ engine_signer = "0x1788093e98242e0536f92d190b19bae096f1394c"
 reseal_on_txs = "none"
 force_sealing = true
 gas_floor_target = "8000000"
-min_gas_price = 1000000000
+min_gas_price = 10000000
 
 
 [footprint]
