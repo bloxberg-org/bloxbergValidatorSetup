@@ -31,6 +31,7 @@ start () {
 			ENGINE_SIGNER='0x'${AUTH_ADDRESS}
 		fi
 	else
+		cp /validator.tpl /home/parity/.local/share/io.parity.ethereum/validator.toml
 		ENGINE_SIGNER=`parity --config /home/parity/.local/share/io.parity.ethereum/validator.toml account new  2>&1 | grep 0x`
 		echo "Generated keypair: ${ENGINE_SIGNER}"
 		echo ${ENGINE_SIGNER} > /engine_signer
