@@ -30,6 +30,8 @@ password = ["/home/parity/.local/share/io.parity.ethereum/validator.pwd"]
 engine_signer = "__ENGINE_SIGNER__"
 reseal_on_txs = "none"
 force_sealing = true
+min_gas_price = 1
+gas_floor_target = "10000000"
 
 [footprint]
 tracing = "off"
