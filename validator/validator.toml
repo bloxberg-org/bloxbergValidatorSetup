@@ -6,33 +6,33 @@ base_path = "/home/parity/.local/share/io.parity.ethereum/bloxbergData"
 auto_update = "all"
 
 [network]
-port = 30303
+port = 30333
 reserved_peers = "/home/parity/.local/share/io.parity.ethereum/bootnodes.txt"
 nat = "extip:130.183.206.234"
 #discovery = false
 
 [rpc]
-port = 8545
+port = 8660
 apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc", "parity_accounts"]
-interface = "local"
+interface = "all"
+cors = ["*"]
 
 [websockets]
 disable = false
-port = 8546
-interface = "local"
-origins = ["none"]
+port = 8661
+interface = "all"
+origins = ["all"]
 
 [account]
 password = ["/home/parity/.local/share/io.parity.ethereum/validator.pwd"]
 
 [mining]
 #CHANGE ENGINE SIGNER TO VALIDATOR ADDRESS
-engine_signer = "0x1788093e98242e0536f92d190b19bae096f1394c"
+engine_signer = "0x60c83da6022caf79a871de94c949303ec4dc7546"
 reseal_on_txs = "none"
 force_sealing = true
-gas_floor_target = "8000000"
-min_gas_price = 10000000
-
+min_gas_price = 1000000000
+gas_floor_target = "10000000"
 
 [footprint]
 tracing = "off"
