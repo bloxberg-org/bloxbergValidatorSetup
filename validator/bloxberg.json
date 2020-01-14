@@ -3,7 +3,7 @@
     "engine": {
         "authorityRound": {
             "params": {
-		"maximumUncleCountTransition": 4319600,
+		"maximumUncleCountTransition": 4797660,
                 "maximumUncleCount": 0,
                 "stepDuration": "5",
                 "validators" : {
@@ -13,7 +13,7 @@
                         },
                         "100": {
             "contract": "0x9850711951a84ef8a2a31a7868d0dca34b0661ca"
-        }, "4319600": { 
+        }, "4797660": { 
 	"safeContract": "0x60c83da6022caf79a871de94c949303ec4dc7546"
 	}
                     }
@@ -32,14 +32,14 @@
         "eip211Transition": 0,
         "eip214Transition": 0,
         "eip658Transition": 0,
-	"eip145Transition": 4319600,
-        "eip1014Transition": 4319600,
-        "eip1052Transition": 4319600,
-        "eip1283Transition": 4319600,
-        "eip1344Transition": 4319600,
-        "eip1706Transition": 4319600,
-        "eip1884Transition": 4319600,
-        "eip2028Transition": 4319600,
+	"eip145Transition": 4797660,
+        "eip1014Transition": 4797660,
+        "eip1052Transition": 4797660,
+        "eip1283Transition": 4797660,
+        "eip1344Transition": 4797660,
+        "eip1706Transition": 4797660,
+        "eip1884Transition": 4797660,
+        "eip2028Transition": 4797660,
 	"maxCodeSize": 24576,
         "maxCodeSizeTransition": "0x0",
 	"eip150Transition": "0x0",
@@ -86,7 +86,7 @@
               }
             }
           },
-          "4319600": {
+          "4797660": {
             "info": "Istanbul HF",
             "price": {
               "alt_bn128_const_operations": {
@@ -109,7 +109,7 @@
               }
             }
           },
-          "4319600": {
+          "4797660": {
             "info": "Istanbul HF",
             "price": {
               "alt_bn128_pairing": {
@@ -125,7 +125,7 @@
       "builtin": {
         "name": "blake2_f",
         "pricing": {
-          "4319600": {
+          "4797660": {
             "info": "Istanbul HF",
             "price": {
               "blake2_f": {
