@@ -3,19 +3,20 @@
     "engine": {
         "authorityRound": {
             "params": {
-		"maximumUncleCountTransition": 4797660,
+		"maximumUncleCountTransition": 5006743,
                 "maximumUncleCount": 0,
                 "stepDuration": "5",
                 "validators" : {
                     "multi": {
-                        "0": {
+                     "0": {
                             "list": ["0xaa84378fa41da83a9b6523ba46e45a664fbebfc8"]
                         },
                         "100": {
-            "contract": "0x9850711951a84ef8a2a31a7868d0dca34b0661ca"
-        }, "4797660": { 
-	"safeContract": "0x535436E0B44771e02602eB5C4d754bc622c0a3d9"
-	}
+           		 "contract": "0x9850711951a84ef8a2a31a7868d0dca34b0661ca"
+        		},
+       			"5006743": { 
+			"safeContract": "0x9850711951a84ef8a2a31a7868d0dca34b0661ca"
+			}
                     }
                 }
             }
@@ -26,27 +27,21 @@
         "maximumExtraDataSize": "0x20",
         "minGasLimit": "0x7A1200",
         "networkID" : "0x2323",
-	"eip155Transition": 0,
-	"validateChainIdTransition": 0,
-        "eip140Transition": 0,
-        "eip211Transition": 0,
-        "eip214Transition": 0,
-        "eip658Transition": 0,
-	"eip145Transition": 4797660,
-        "eip1014Transition": 4797660,
-        "eip1052Transition": 4797660,
-        "eip1283Transition": 4797660,
-        "eip1344Transition": 4797660,
-        "eip1706Transition": 4797660,
-        "eip1884Transition": 4797660,
-        "eip2028Transition": 4797660,
-	"maxCodeSize": 24576,
-        "maxCodeSizeTransition": "0x0",
-	"eip150Transition": "0x0",
-        "eip160Transition": "0x0",
-        "eip161abcTransition": "0x0",
-        "eip161dTransition": "0x0",
-        "eip98Transition": "0x7fffffffffffff"
+
+        "eip140Transition": "0x0",
+        "eip211Transition": "0x0",
+        "eip214Transition": "0x0",
+        "eip658Transition": "0x0",
+
+	"eip145Transition": 5006743,
+        "eip1014Transition": 5006743,
+        "eip1052Transition": 5006743,
+
+        "eip1283Transition": 5006743,
+        "eip1344Transition": 5006743,
+        "eip1706Transition": 5006743,
+        "eip1884Transition": 5006743,
+        "eip2028Transition": 5006743
     },
     "genesis": {
         "seal": {
@@ -86,7 +81,7 @@
               }
             }
           },
-          "4797660": {
+          "5006743": {
             "info": "Istanbul HF",
             "price": {
               "alt_bn128_const_operations": {
@@ -109,7 +104,7 @@
               }
             }
           },
-          "4797660": {
+          "5006743": {
             "info": "Istanbul HF",
             "price": {
               "alt_bn128_pairing": {
@@ -125,7 +120,7 @@
       "builtin": {
         "name": "blake2_f",
         "pricing": {
-          "4797660": {
+          "5006743": {
             "info": "Istanbul HF",
             "price": {
               "blake2_f": {
