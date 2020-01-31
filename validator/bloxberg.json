@@ -3,15 +3,20 @@
     "engine": {
         "authorityRound": {
             "params": {
+		"maximumUncleCountTransition": 5006743,
+                "maximumUncleCount": 0,
                 "stepDuration": "5",
                 "validators" : {
                     "multi": {
-                        "0": {
+                     "0": {
                             "list": ["0xaa84378fa41da83a9b6523ba46e45a664fbebfc8"]
                         },
-			"100": {
-            "contract": "0x9850711951a84ef8a2a31a7868d0dca34b0661ca"
-        }
+                        "100": {
+           		 "contract": "0x9850711951a84ef8a2a31a7868d0dca34b0661ca"
+        		},
+       			"5006743": { 
+			"safeContract": "0x9850711951a84ef8a2a31a7868d0dca34b0661ca"
+			}
                     }
                 }
             }
@@ -22,24 +27,26 @@
         "maximumExtraDataSize": "0x20",
         "minGasLimit": "0x7A1200",
         "networkID" : "0x2323",
-        "eip155Transition": 0,
-        "validateChainIdTransition": 0,
-        "eip140Transition": 0,
-        "eip211Transition": 0,
-        "eip214Transition": 0,
-        "eip658Transition": 0,
-        "eip150Transition": "0x0",
-        "eip160Transition": "0x0",
-        "eip161abcTransition": "0x0",
-        "eip161dTransition": "0x0",
-        "eip98Transition": "0x7fffffffffffff",
-        "maxCodeSize": 24576,
-        "maxCodeSizeTransition": "0x0"
+
+        "eip140Transition": "0x0",
+        "eip211Transition": "0x0",
+        "eip214Transition": "0x0",
+        "eip658Transition": "0x0",
+
+	"eip145Transition": 5006743,
+        "eip1014Transition": 5006743,
+        "eip1052Transition": 5006743,
+
+        "eip1283Transition": 5006743,
+        "eip1344Transition": 5006743,
+        "eip1706Transition": 5006743,
+        "eip1884Transition": 5006743,
+        "eip2028Transition": 5006743
     },
     "genesis": {
         "seal": {
             "authorityRound": {
-                "step": "0x0",
+"step": "0x0",
                 "signature": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
             }
         },
@@ -52,11 +59,78 @@
             "0x0000000000000000000000000000000000000003": { "balance": "1", "builtin": { "name": "ripemd160", "pricing": { "linear": { "base": 600, "word": 120 } } } },
             "0x0000000000000000000000000000000000000004": { "balance": "1", "builtin": { "name": "identity", "pricing": { "linear": { "base": 15, "word": 3 } } } },
             "0x0000000000000000000000000000000000000005": { "builtin": { "name": "modexp", "activate_at": 0, "pricing": { "modexp": { "divisor": 20 } } } },
-            "0x0000000000000000000000000000000000000006": { "builtin": { "name": "alt_bn128_add", "activate_at": 0, "pricing": { "linear": { "base": 500, "word": 0 } } } },
-            "0x0000000000000000000000000000000000000007": { "builtin": { "name": "alt_bn128_mul", "activate_at": 0, "pricing": { "linear": { "base": 40000, "word": 0 } } } },
-            "0x0000000000000000000000000000000000000008": { "builtin": { "name": "alt_bn128_pairing", "activate_at": 0, "pricing": { "alt_bn128_pairing": { "base": 100000, "pair": 80000 } } } },
-	"0xab59a1ea1ac9af9f77518b9b4ad80942ade35088": { "balance": "100000000000000000000000000000000" }
+	    "0x0000000000000000000000000000000000000006": {
+			"builtin": {
+				"name": "alt_bn128_add",
+				"activate_at": 0,
+				"pricing": {
+					"alt_bn128_const_operations": {
+						"price": 500
+					}
+				}
+			}
+		},
+	       "0000000000000000000000000000000000000007": {
+      "builtin": {
+        "name": "alt_bn128_mul",
+        "pricing": {
+          "0": {
+            "price": {
+              "alt_bn128_const_operations": {
+                "price": 40000
+              }
+            }
+          },
+          "5006743": {
+            "info": "Istanbul HF",
+            "price": {
+              "alt_bn128_const_operations": {
+                "price": 6000
+              }
+            }
+          }
+        }
+      }
+    }, 
+"0000000000000000000000000000000000000008": {
+      "builtin": {
+        "name": "alt_bn128_pairing",
+        "pricing": {
+          "0": {
+            "price": {
+              "alt_bn128_pairing": {
+                "base": 100000,
+                "pair": 80000
+              }
+            }
+          },
+          "5006743": {
+            "info": "Istanbul HF",
+            "price": {
+              "alt_bn128_pairing": {
+                "base": 45000,
+                "pair": 34000
+              }
+            }
+          }
+        }
+      }
+    },	   
+    "0x0000000000000000000000000000000000000009": {
+      "builtin": {
+        "name": "blake2_f",
+        "pricing": {
+          "5006743": {
+            "info": "Istanbul HF",
+            "price": {
+              "blake2_f": {
+                "gas_per_round": 1
+              }
+            }
+          }
+        }
+      }
+    },    
+    "0xab59a1ea1ac9af9f77518b9b4ad80942ade35088": { "balance": "100000000000000000000000000000000" }
 }
-
-
 }

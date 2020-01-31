@@ -9,11 +9,12 @@ services:
       - ./validator:/home/parity/.local/share/io.parity.ethereum
     entrypoint: /start.sh
     environment:
+      #CHANGE NAT_IP to your IP
       NAT_IP: 130.183.206.234
       #If you have multiple addresses, you can specify one address for the authority node.
       #AUTH_ADDRESS: 0xab59a1ea1ac9af9f77518b9b4ad80942ade35088
     user: "0:0"
     ports:
-      - 8545:8545
-      - 8546:8546
-      - 30303:30303
+      - "8545:8545"
+      - "8546:8546"
+      - "30303:30303"
