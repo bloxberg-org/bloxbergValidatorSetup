@@ -7,6 +7,7 @@ services:
     container_name: validator
     volumes:
       - ./validator:/home/parity/.local/share/io.parity.ethereum
+    restart: unless-stopped
     entrypoint: /start.sh
     environment:
       #CHANGE NAT_IP to your IP
