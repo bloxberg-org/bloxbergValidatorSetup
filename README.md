@@ -5,9 +5,16 @@ Remote Machine Minimum System Requirements:
 * Ubuntu 16.04 or 18.04 Image (Other Operating Systems can work, but commands may have to be altered)
 * Minimum 2 CPU
 * Minimum 2GB RAM Memory
-* We recommend for future proofing at least 50 GB of SSD storage.
+* We recommend for future proofing at least 100 GB of SSD storage.
 
 These are simply the minimum requirements and we do recommend to allocate more resources to ensure stability.
+
+With the latest update to parity 2.7, it is also necessary for your server CPU to support aes. This can be found by running:
+
+```
+cat /proc/cpuinfo
+```
+on the server and checking in the flags column for aes.
 
 Additionally, the blockchain connects to other nodes via port 30303, so it is important this port is open via your firewall beforehand.
 
