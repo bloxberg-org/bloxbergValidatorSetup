@@ -9,7 +9,7 @@ auto_update = "all"
 port = 30303
 reserved_peers = "/home/parity/.local/share/io.parity.ethereum/bootnodes.txt"
 nat = "extip:130.183.206.234"
-#discovery = false
+discovery = true
 
 [rpc]
 port = 8545
