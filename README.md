@@ -28,6 +28,7 @@ but don't need to be accesible over the internet.
 2. Edit the `validator.yml` with a text editor (nano or vim) and change the NATIP variable to your external IP. Save this file
 3. Edit the `validator/validator.pwd` file and insert a secure password. This will be used to encrypt your private key.
 4. Run `sudo ./setup.sh`.
-5. Run `sudo docker-compose -f validator.yml up`.
+5. Run `sudo chmod 666 /var/run/docker.sock` to handle `Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock:`.
+6. Run `docker-compose -f validator.yml up`.
 This will start the docker container and generate an ethereum address and an enode address. Send these both to the bloxberg consortium.
-6. Use Ctrl+C to shut down the docker container. Lastly, run `docker-compose -f validator.yml up -d`. This will daemonize the container and start running the validator node in the background.
+7. Use Ctrl+C to shut down the docker container. Lastly, run `docker-compose -f validator.yml up -d`. This will daemonize the container and start running the validator node in the background.
