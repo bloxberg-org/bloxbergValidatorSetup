@@ -2,10 +2,10 @@
 This is a Docker image for running a validator node on the bloxberg blockchain. 
 
 Remote Machine Minimum System Requirements:
-* Ubuntu 16.04 or 18.04 Image (Other Operating Systems can work, but commands may have to be altered)
-* Minimum 2 CPU
-* Minimum 2GB RAM Memory
-* We recommend for future proofing at least 100 GB of SSD storage.
+* Ubuntu 18.04 or 22.04 Image (Other Operating Systems can work, but commands may have to be altered)
+* Minimum 4 CPU
+* Minimum 4GB RAM Memory
+* We recommend for future proofing at least 250 GB of SSD storage.
 
 These are simply the minimum requirements and we do recommend to allocate more resources to ensure stability.
 
